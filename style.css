@@ -1,0 +1,246 @@
+* {
+    /* box-sizing: border-box; */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav {
+    display: flex;
+    padding: 16px 0;
+    justify-content: space-between;
+    align-items: center;
+    font-family: monospace;
+    border-bottom: 1px solid black;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.personal {
+    display: flex;
+    gap: 20px;
+}
+
+.personal div:hover {
+    color: rgba(151, 151, 151, 0.746);
+    cursor: pointer;
+}
+
+header, main {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.Inspired, .land {
+    margin-bottom: 20px;
+}
+
+.one, .two {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.one:hover, .two:hover {
+    transform: scale(0.98);
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.container2 ul {
+    list-style-type: none;
+}
+
+.collage {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.collage1, .collage2, .collage3 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.collage img {
+    max-width: 100%;
+    height: auto;
+}
+
+.another {
+    padding-top: 60px;
+    text-align: center;
+}
+
+.experience {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.experience1, .experience > div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.exp, .exp1, .exp2, .exp3 {
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.text {
+    text-align: center;
+    font-family: "DotGothic16", serif;
+    font-size: 30px;
+    margin: 60px 0 20px;
+}
+
+.profiless {
+    padding: 5%;
+    border-bottom: 1px solid black;
+}
+
+.boxesss {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    padding: 0 5%;
+}
+
+.card {
+    border: 1px solid black;
+    border-radius: 16px;
+    padding: 16px;
+    min-width: 280px;
+    flex: 0 0 auto;
+}
+
+.persondetails {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.persondetails img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+p {
+    padding-left: 16px;
+    border-left: 1px solid black;
+    font-size: 1rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+}
+
+h4 {
+    font-size: 0.875rem;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    flex-wrap: wrap;
+}
+
+.contact {
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.contact:hover {
+    background-color: rgb(217, 211, 211);
+}
+
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .personal {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .personal.show {
+        display: flex;
+    }
+
+    .container2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .experience {
+        flex-direction: column;
+    }
+
+    .boxesss {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Inspired, .land {
+        font-size: 1.5rem;
+    }
+}
+    .text {
+        font-size: 24px;
+    }
